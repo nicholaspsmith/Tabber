@@ -1,0 +1,13 @@
+__pycache__/
+.venv/
+.env
+
+# Generated transcription outputs
+backend/*.gp5
+backend/*.json
+*.gp5
+
+# Local tooling
+.glancey/
+.claude/settings.local.json
+.mcp.json

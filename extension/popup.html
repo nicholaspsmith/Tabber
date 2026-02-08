@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tabber</h1>
+
+    <div id="tab-title" class="tab-title"></div>
+
+    <div class="controls">
+      <label for="engine-select">Engine</label>
+      <select id="engine-select">
+        <option value="klangio">Klangio</option>
+        <option value="opensource">Open-source</option>
+      </select>
+    </div>
+
+    <div class="actions">
+      <button id="btn-url" class="btn btn-primary">Transcribe from URL</button>
+      <button id="btn-record" class="btn btn-secondary">Record Tab Audio</button>
+    </div>
+
+    <div id="status" class="status idle">Ready</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
