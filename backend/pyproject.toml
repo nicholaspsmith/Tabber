@@ -1,0 +1,19 @@
+[project]
+name = "tabber-backend"
+version = "0.1.0"
+description = "Guitar audio to tablature backend"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.34",
+    "python-multipart>=0.0.18",
+    "yt-dlp>=2024.12",
+    "basic-pitch[onnx]>=0.4",
+    "setuptools",
+    "pyguitarpro>=0.9",
+    "httpx>=0.28",
+    "pydantic-settings>=2.7",
+]
+
+[project.scripts]
+tabber = "main:run"
